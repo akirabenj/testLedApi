@@ -11,12 +11,16 @@ namespace testApi.Controllers
     [Route("[controller]")]
     public class LedController : ControllerBase
     {
-
         [HttpGet("{state?}")]
-        public IActionResult Get(bool state)
+        public IActionResult Get(int state)
         {
             var toggleLED = new ToggleLED();
-            toggleLED.SwitchLED(state);
+            if (state == 1) {
+                toggleLED.SwitchLED(true);
+            } else if (state == 0) {
+                toggleLED.SwitchLED(false);
+            }
+            
             return Ok(1);
         }
     }

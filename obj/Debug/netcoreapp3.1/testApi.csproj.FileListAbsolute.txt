@@ -23,3 +23,4 @@
 /home/rnjin/Documents/Projects/dotnet/testApi/obj/Debug/netcoreapp3.1/staticwebassets/testApi.StaticWebAssets.xml
 /home/rnjin/Documents/Projects/dotnet/testApi/obj/Debug/netcoreapp3.1/testApi.dll
 /home/rnjin/Documents/Projects/dotnet/testApi/obj/Debug/netcoreapp3.1/testApi.pdb
+/home/rnjin/Documents/Projects/dotnet/testApi/bin/Debug/netcoreapp3.1/Unosquare.WiringPi.dll

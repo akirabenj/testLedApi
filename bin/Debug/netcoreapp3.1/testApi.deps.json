@@ -25,6 +25,7 @@
       "testApi/1.0.0": {
         "dependencies": {
           "Unosquare.Raspberry.IO": "0.27.0",
+          "Unosquare.WiringPi": "0.5.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -879,6 +880,21 @@
         },
         "compile": {
           "lib/netstandard2.0/Swan.Lite.dll": {}
+        }
+      },
+      "Unosquare.WiringPi/0.5.0": {
+        "dependencies": {
+          "Unosquare.Raspberry.Abstractions": "0.4.0",
+          "Unosquare.Swan": "2.3.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Unosquare.WiringPi.dll": {
+            "assemblyVersion": "0.5.0.0",
+            "fileVersion": "0.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Unosquare.WiringPi.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -3021,6 +3037,13 @@
       "sha512": "sha512-YwlTW0JEMyxRGEYdn2WQZ23NpvbRCNB8T33EmnEdhkDAKteRX5qAv0doO1KBiUs2g6X//VECZi2XoQrj6z3H3g==",
       "path": "unosquare.swan.lite/2.3.0",
       "hashPath": "unosquare.swan.lite.2.3.0.nupkg.sha512"
+    },
+    "Unosquare.WiringPi/0.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-js6uCr5v76V+ZKmsy1QpmjsSj2k1FpQvcBYbDwEN9KCXz9qMqiUosawuixqzYFTbvmPTIkGqTsC0q97KrAaDLw==",
+      "path": "unosquare.wiringpi/0.5.0",
+      "hashPath": "unosquare.wiringpi.0.5.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",

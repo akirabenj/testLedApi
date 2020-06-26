@@ -1002,6 +1002,19 @@
         "runtime": {
           "lib/netstandard2.0/Swan.Lite.dll": {}
         }
+      },
+      "Unosquare.WiringPi/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Unosquare.Raspberry.Abstractions": "0.4.0",
+          "Unosquare.Swan": "2.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Unosquare.WiringPi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Unosquare.WiringPi.dll": {}
+        }
       }
     }
   },
@@ -3548,11 +3561,25 @@
         "unosquare.swan.lite.2.3.0.nupkg.sha512",
         "unosquare.swan.lite.nuspec"
       ]
+    },
+    "Unosquare.WiringPi/0.5.0": {
+      "sha512": "js6uCr5v76V+ZKmsy1QpmjsSj2k1FpQvcBYbDwEN9KCXz9qMqiUosawuixqzYFTbvmPTIkGqTsC0q97KrAaDLw==",
+      "type": "package",
+      "path": "unosquare.wiringpi/0.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Unosquare.WiringPi.dll",
+        "lib/netstandard2.0/Unosquare.WiringPi.xml",
+        "unosquare.wiringpi.0.5.0.nupkg.sha512",
+        "unosquare.wiringpi.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Unosquare.Raspberry.IO >= 0.27.0"
+      "Unosquare.Raspberry.IO >= 0.27.0",
+      "Unosquare.WiringPi >= 0.5.0"
     ]
   },
   "packageFolders": {
@@ -3593,6 +3620,10 @@
           "Unosquare.Raspberry.IO": {
             "target": "Package",
             "version": "[0.27.0, )"
+          },
+          "Unosquare.WiringPi": {
+            "target": "Package",
+            "version": "[0.5.0, )"
           }
         },
         "imports": [
