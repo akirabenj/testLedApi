@@ -1,20 +1,19 @@
-using System;
-using Unosquare.RaspberryIO;
-using Unosquare.WiringPi;
+using System.Device.I2c;
 
 namespace testApi {
     public class ToggleLED {
 
+        private I2cDevice device;
         public ToggleLED() {
-            Pi.Init<BootstrapWiringPi>();
+            I2cConnectionSettings settings = new I2cConnectionSettings(1, 0x8);
+            this.device = I2cDevice.Create(settings);
         }
         
         public void SwitchLED(bool state) {
-            var device = Pi.I2C.AddDevice(0x8);
             if (state) {
-                device.Write(0x1);
+                device.WriteByte(0x1);
             } else {
-                device.Write(0x0);
+                device.WriteByte(0x0);
             }
         }
     }
