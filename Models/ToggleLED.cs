@@ -11,9 +11,9 @@ namespace testApi {
         
         public void SwitchLED(bool state) {
             if (state) {
-                device.WriteByte(0x1);
+                device.WriteByte(1);
             } else {
-                device.WriteByte(0x0);
+                device.WriteByte(0);
             }
         }
     }
