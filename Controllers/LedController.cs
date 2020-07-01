@@ -11,14 +11,19 @@ namespace testApi.Controllers
     [Route("[controller]")]
     public class LedController : ControllerBase
     {
-        [HttpGet("{state?}")]
+        private readonly ITemperatureService temperatureService;
+
+        public LedController(ITemperatureService service)
+        {
+            temperatureService = service;
+        }
+
+        [HttpGet("{id}")]
         public IActionResult Get(int state)
         {
-            var toggleLED = new ToggleLED();
             if (state == 1) {
-                toggleLED.SwitchLED(true);
-            } else if (state == 0) {
-                toggleLED.SwitchLED(false);
+                var temp = temperatureService.getCurrentTemperature();
+                return Ok(temp);
             }
             
             return Ok(1);
